@@ -7,7 +7,7 @@ const STATUSES: readonly RunStatus[] = ['ok', 'retry', 'fail'];
 type Line = { at: string; job: string; status: RunStatus; owner: string | null; error: string | null };
 
 // A line counts only when it is a JSON object with a string `at` and `job` and a known `status`.
-function parseLine(text: string): Line | null {
+export function parseLine(text: string): Line | null {
   let v: unknown;
   try {
     v = JSON.parse(text);
