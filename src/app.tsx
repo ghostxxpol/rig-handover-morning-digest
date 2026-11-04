@@ -18,5 +18,9 @@ export function createApp(config: RigConfig = loadConfig()) {
     ),
   );
 
+  // digest page (issue #3): GET /digest/:night
+
+  // digest json (issue #4): GET /api/digest/:night
+
   return app;
 }

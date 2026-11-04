@@ -25,4 +25,3 @@ export type Night = {
 // Returns null when the night has no file. An empty file gives rows: [].
 // A line that does not parse is counted in badLines and never thrown.
 export type ReadNight = (runsDir: string, night: string) => Night | null;
-export declare function readNight(runsDir: string, night: string): Night | null;
